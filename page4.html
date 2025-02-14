@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Session Details</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f8c8c8; /* Light pink for a romantic atmosphere */
+            color: #2c3e50;
+            font-family: 'Comic Sans MS', sans-serif;
+            padding-top: 15px;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .details {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .form-container {
+            margin-top: 30px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 18px;
+            width: 300px;
+            border: 2px solid #e74c3c;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        button {
+            margin: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+            background-color: #ff2a58;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        .movie-info {
+            font-size: 26px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .heart {
+            font-size: 80px;
+            color: #e74c3c;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Movie Session Details!</h1>
+        <div class="movie-info">
+            <p>Movie Title: <strong>Star Wars Episode 2: Attack of the Clones</strong></p>
+            <p>Session Times:</p>
+            <ul>
+                <li>2:45 PM (Toronto)</li>
+                <li>7:45 PM (London)</li>
+            </ul>
+        </div>
+        <div class="heart">💖</div>
+        <p>Please enter your address, and your future husband will send over a box of chocolates!</p>
+        <div class="form-container">
+            <input type="text" placeholder="Enter your address..." id="address">
+        </div>
+        <button onclick="alert('Thank you for the address! Sending chocolates soon!')">Submit Address</button>
+    </div>
+</body>
+</html>
