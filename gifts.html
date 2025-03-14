@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Surprise!</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffe6f2;
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .gift-row {
+            display: flex;
+            justify-content: space-around; /* Ensure the images are spaced evenly */
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        .gift-item {
+            text-align: center;
+            width: 150px; /* Fixed width for the images */
+        }
+
+        .gift-item img {
+            width: 100%;
+            height: 150px; /* Fixed height for consistency */
+            object-fit: cover; /* Default: crop images */
+            border-radius: 10px;
+        }
+
+        /* Special styling for Gift 2 to ensure it's not cut */
+        .gift-item.special img {
+            object-fit: contain; /* Ensures the image fits without being cut */
+            height: auto; /* Allow height to adjust */
+            max-height: 150px; /* Limit max height */
+        }
+
+        .caption {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: inline-block;
+            background-color: #d63384;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="color: #d63384;">I hope you like them! 🎁</h1>
+
+        <!-- Row for Gift Images -->
+        <div class="gift-row">
+            <div class="gift-item">
+                <img src="images/pants.png" alt="Gift 1">
+                <div class="caption">Gift 1: Adanola Varsity Washed Sweatpants - Blush Pink</div>
+            </div>
+            <div class="gift-item special">
+                <img src="images/bluehat.png" alt="Gift 2">
+                <div class="caption">Gift 2: Adanola Varsity Cap - powder blue</div>
+            </div>
+            <div class="gift-item">
+                <img src="images/lipstick.png" alt="Gift 3">
+                <div class="caption">Gift 3: Powder Kiss Lipstick - midtone pink</div>
+            </div>
+            <div class="gift-item">
+                <img src="images/tomato-malatang-soup.jpg" alt="Gift 4">
+                <div class="caption">Gift 4: make up tomato malatang delivery</div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <a href="index.html" class="back-button">Go Back</a>
+    </div>
+
+</body>
+</html>
